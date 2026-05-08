@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #1a1a1a;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    top: 20px;
+    z-index: 1000;
+}
+
+.menu-pilula {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border: 1px solid #eee;
+    padding: 12px 30px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.menu-pilula ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.menu-pilula a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu-pilula a:hover { color: #000; }
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.descricao {
+    max-width: 600px;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.botoes {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-principal {
+    background: linear-gradient(45deg, #a855f7, #f97316);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-secundario {
+    border: 1px solid #ddd;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+}
+
+.sobre-mim {
+    background-color: #1b0a33;
+    color: white;
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-sobre {
+    display: flex;
+    max-width: 1100px;
+    gap: 60px;
+    align-items: center;
+}
+
+.foto-container-retangular img {
+    width: 350px;
+    border-radius: 24px;
+}
+
+.tag-intro {
+    color: #a855f7;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.cards-info {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    flex: 1;
+}
+
+.contato-secao {
+    background-color: #1b0a33;
+    color: white;
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-contato {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.instrucao {
+    color: #b0b0b0;
+    margin: 20px auto 40px;
+    max-width: 550px;
+}
+
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.linha-input {
+    display: flex;
+    gap: 20px;
+}
+
+.formulario-contato input, .formulario-contato textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 18px;
+    border-radius: 12px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+}
+
+.btn-submit {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 15px 45px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 500;
+    align-self: center;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background: white;
+    color: #0f051d;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #0f051d;
+    color: #666;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}

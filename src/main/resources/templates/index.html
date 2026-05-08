@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Desenvolvedor Frontend</title>
+    
+    <link rel="stylesheet" th:href="@{/style.css}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="menu-pilula">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre mim</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="home" class="hero">
+
+        <p class="saudacao">Olá! Eu sou o João Gabriel Gomes.</p>
+        <h1>Desenvolvedor Frontend <br></h1>
+        <p class="descricao">
+            Focado em criação de sites com Wordpress
+        </p>
+        <div class="botoes">
+            <a href="#contato" class="btn-principal">Me contate &rarr;</a>
+            <a href="https://github.com/Joaogabrielgomes" target="_blank" class="btn-secundario">GitHub &darr;</a>
+            <a href="https://www.linkedin.com/in/joaogabrielgomess/" target="_blank" class="btn-secundario">Linkedin &darr;</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre-mim">
+        <div class="container-sobre">
+            <div class="foto-container-retangular">
+                <img th:src="@{img/foto-joao.jpg}" alt="Foto de João">
+            </div>
+
+            <div class="conteudo-texto">
+                <span class="tag-intro">Introdução</span>
+                <h2>Sobre Mim</h2>
+                <p>
+                    Sou desenvolvedor de software focado em tecnologias fronend.
+                    Atualmente busco oportunidades com Wordpress, e HTML/CSS.
+                </p>
+
+                <div class="cards-info">
+                    <article class="card">
+                        <h3>Linguagens</h3>
+                        <p>Wordpress, HTML/CSS e SQL</p>
+                    </article>
+                    <article class="card">
+                        <h3>Formação</h3>
+                        <p>Sistemas de Informação.</p>
+                        <p>Técnico em Redes de Computadores.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Projetos</h3>
+                        <p>Projetos no GitHub</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato-secao">
+        <div class="container-contato">
+            <span class="tag-intro"></span>
+            <h2>Entre em contato</h2>
+            <p class="instrucao">Eu adoraria ouvir você! Se tiver alguma dúvida ou feedback, por favor use o formulário abaixo.</p>
+
+            <form class="formulario-contato">
+                <div class="linha-input">
+                    <input type="text" placeholder="Coloque seu nome" required>
+                    <input type="email" placeholder="Coloque seu email" required>
+                </div>
+                <textarea placeholder="Escreva sua mensagem" rows="6" required></textarea>
+
+
+                <button type="submit" class="btn-submit">Submit now &rarr;</button>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Desenvolvido por João Gabriel - 2026</p>
+</footer>
+
+</body>
+</html>
